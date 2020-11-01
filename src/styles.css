@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  font-family: Helvetica;
+  font-size: 14px;
+  color: #d7d7d7;
+}
+
+.header {
+  color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  line-height: 0.4em;
+  text-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.2);
+  transition: text-shadow 0.4s, transform 0.4s;
+  overflow: wrap;
+}
+
+.particles-js {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-position: "center";
+  background-size: "cover";
+  background-repeat: "no-repeat";
+  height: 100%;
+  display: "flex";
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.btext {
+  color: #f9f3f4;
+  position: absolute;
+  text-align: center;
+  top: 75%;
+  width: 100%;
+  line-height: 0.4em;
+
+  text-transform: capitalize;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  outline: None;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: inherit;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  height: 42px;
+  letter-spacing: 0.5px;
+  line-height: 42px;
+  padding: 0px 1rem;
+  pointer-events: all;
+  overflow: hidden;
+  border: None;
+
+  width: 17%;
+  margin: 10px;
+  /* DO WE WANT THE TRANSFORM INITIALLY CAUSES ISSUES*/
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  transition: box-shadow 0.4s, transform 0.4s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+.header:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+.header:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}
+.glow-btn:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.btn:active {
+  box-shadow: none;
+  transform: scale(0.95);
+}
